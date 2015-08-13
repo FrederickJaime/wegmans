@@ -1,0 +1,22 @@
+
+@font-face {
+    font-family: "AvenirLTStd-Heavy";
+    src: url("AvenirLTStd-Heavy.otf") format("opentype");
+}
+@font-face {
+    font-family: "AvenirLTStd-Medium";
+    src: url("AvenirLTStd-Medium.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "HelveticaNeue";
+    src: url("HelveticaNeue.ttf") format('truetype');
+}
+@font-face {
+    font-family: "HelveticaNeueMedium";
+    src: url("HelveticaNeueMedium.ttf") format('truetype');
+}
+
+
+
+

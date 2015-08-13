@@ -1,0 +1,57 @@
+
+
+.footer{
+	
+	background:$brand-gray-mid;
+	border-top:1px solid $brand-gray-light;
+	font-size:0px;
+	padding-top:39px;
+	padding-bottom:67px;
+
+	.link-holder{
+		position: relative;
+		@include inline-block;
+		width: 153px;
+		margin:0 0 0 (33/1140)*100%;
+		vertical-align: top;
+
+		.label{
+			position:relative;
+			display: block;
+			text-align: left;
+			font-size: 13px;
+			width: 100%;
+			color:$brand-black;
+			padding-top:13px;
+			padding-bottom:13px;
+			border-bottom:1px solid $footerlabel;
+			font-family: $avenir-medium;
+			text-transform: capitalize;
+			margin-bottom: 6px;
+		}
+		.links{
+			position:relative;
+			font-size: 12px;
+			font-family: $helveticaNeue-reg;
+			
+			a{
+				position:relative;
+				display: block;
+				color:$brand-blue;
+				padding:6px 0px;
+
+				&:hover{
+					color:$brand-black;
+				}
+			}
+		}
+	}
+
+	.link-holder:first-child{
+		margin-left: 0px;
+		width: (170/1140)*100%;
+	}
+
+
+
+}

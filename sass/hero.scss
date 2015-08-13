@@ -1,0 +1,122 @@
+
+.hero{
+
+	
+	font-size:0px;
+	padding:64px 0px 67px 0px;
+	.slide-holder{
+		position:relative;
+		height: 416px;
+		
+		width: calc(100% - 296px);
+		@include inline-block;
+		overflow: hidden;
+
+		.slide{
+			position:absolute;
+			display: block;
+			width: 100%;
+			height: 100%;
+			top:0px;
+			left:0px;
+			background:$brand-black;
+
+			a{
+	        	position: relative;
+	        	@include inline-block;
+	        	color:$brand-white;
+	        	font-size: 13px;
+	        	text-transform: capitalize;
+	        	background: $brand-blue;
+	        	font-family: $avenir-heavy;
+	        	
+	        	text-align: center;
+	        	padding:12px 15px;
+	        	@include border-radius(4px);
+	        	&:hover{
+	        		background:$brand-black;
+	        	}
+	        }
+		}
+		#slide-0{
+			background:url('../img/carousel/slide-0.jpg') no-repeat top center;
+
+			a{
+				position:absolute;
+				margin-left: 50%;
+				bottom:71px;
+				@include translate(-50%,0%);
+			}
+		}
+	}
+
+	.slide-picker{
+		width: 276px;
+		height: 416px;
+		font-size: 0px;
+		margin-left:20px;
+		@include inline-block;
+		
+		.slide-btn{
+			position: relative;
+			display: block;
+			height: 104px;
+			border-bottom:1px solid $slidpickborder;
+			background:$brand-white;;
+			color:$brand-black;
+			padding:30px 0px 0px 80px;
+			cursor:pointer;
+			&:hover{
+				background:$slidepick;
+				.arrow-left {
+					display: block;
+				}
+
+			}
+			img{
+				position:absolute;
+				left: 6px;
+				top: 50%;
+				@include translate(0,-50%);
+			}
+			.copy-sm{
+				font-size: 16px;
+				font-family: $avenir-medium;
+				margin-bottom: 5px;
+
+			}
+			span{
+				position:relative;
+				display: block;
+			}
+			.copy-xl{
+				font-size: 22px;
+				font-family: $avenir-heavy;
+				text-transform: uppercase;
+				letter-spacing: .015em;
+
+
+			}
+			.arrow-left {
+				position:absolute;
+				display: none;
+				top:50%;
+				@include translate(0,-50%);
+				left: -13px;
+				z-index: 1;
+				width: 0; 
+				height: 0; 
+				border-top: 15px solid transparent;
+				border-bottom: 15px solid transparent; 
+				
+				border-right:15px solid $slidepick; 
+			}
+		}
+		.slide-btn:first-child{
+			background:$slidepick;
+			.arrow-left {
+				display: block;
+			}
+		}
+	}
+}

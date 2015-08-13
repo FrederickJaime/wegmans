@@ -1,0 +1,155 @@
+
+
+.eat-well{
+	
+	
+	.section{
+		background:$brand-gray-mid;
+		
+		padding:0px 20px;
+		h2{
+			font-size: 18px;
+			font-family: $avenir-heavy;
+			text-transform: uppercase;
+			padding:14px 0px 8px 0px;
+		}
+		a{
+			position:absolute;
+			top:13px;
+			right: 20px;
+			font-family: $helveticaNeue-medium;
+			color:$brand-blue;
+			font-size: 15px;
+		}
+	}
+}
+
+
+
+.food-suggestions{
+	.section{
+		
+		height:395px;
+		font-size: 0px;
+		
+
+		.arrow{
+			position:relative;
+			width: 46px;
+			top:31%;
+			@include translate(0,-50%);
+			padding:0px 6px;
+
+			@include inline-block;
+			vertical-align: top;
+		}
+		.prod-holder{
+			position:relative;
+			@include inline-block;
+			width: calc(100% - 92px);
+			height: 395px;
+			vertical-align: top;
+			
+			overflow: hidden;
+			white-space: nowrap;
+			font-size: 0px;
+
+			.product{
+				position:relative;
+				@include inline-block;
+				width: 159px;
+				white-space: normal;
+				padding-top:37px;
+				margin-left:20px;
+				vertical-align: top;
+				.prod-image{
+					position:relative;
+					display: block;
+					
+					margin: 0px auto;
+				}
+				.prod-desc{
+					position:relative;
+					width: 100%;
+					display: block;
+					
+					font-size: 15px;
+					margin-top: 26px;
+					color:$brand-blue;
+					line-height: 19px;
+					font-family: $avenir-medium;
+				}
+				.prod-rating{
+					position:relative;
+					width: 100%;
+					font-size: 15px;
+					margin-top: 4px;
+					color:$brand-blue;
+					display: block;
+
+					.rating{
+						position:relative;
+						@include inline-block;
+						width: calc(100% - 44px); // < 5 STAR RATING
+						height: 20px;
+						background:url('../img/rating-stars.png') no-repeat top left;
+					}
+					/* START RATING : BEGIN */
+					.rating-0-5{
+						width: calc(34% - 44px);
+					}
+					.rating-1-0{
+						width: calc(44% - 44px);
+					}
+					.rating-1-5{
+						width: calc(50% - 44px);
+					}
+					.rating-2-0{
+						width: calc(57% - 44px);
+					}
+
+					.rating-2-5{
+						width: calc(64% - 44px);
+					}
+
+					.rating-3-0{
+						width: calc(72% - 44px);
+					}
+					.rating-3-5{
+						width: calc(79% - 44px);
+					}
+					.rating-4-0{
+						width: calc(87% - 44px);
+					}
+					.rating-4-5{
+						width: calc(94% - 44px);
+					}
+					/* START RATING : END */
+
+
+					.rating-count{
+						position:relative;
+						@include inline-block;
+						font-size: 12px;
+						width: 40px;
+						text-align: left;
+					}
+				}
+
+
+				.prod-cost{
+					position:relative;
+					display: block;
+					text-align: left;
+					font-family: $avenir-medium;
+					font-size: 15px;
+					color:$brand-red;
+					margin-top:10px;
+				}
+			}
+			.product:first-child{
+				margin-left:0px;
+			}
+		}
+	}
+}
