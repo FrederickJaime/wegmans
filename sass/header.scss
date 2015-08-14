@@ -78,17 +78,30 @@
         		background:$brand-black;
         	}
         }
+
         input{
         	position:relative;
         	@include inline-block;
+        	background:url('../img/search-icon.png') no-repeat 10px 10px;
         	height: 37px;
         	width: calc(100% - 165px);
         	border:1px solid $brand-gray-light;
         	@include border-radius(4px 0px 0px 4px);
         	padding-left: 10px;
 
+        	&:focus{
+        		background:none;
+        	}
+        	
         	//<i class="fa fa-search"></i>
         }
+        .empty{
+        	background:none;
+        }
+        .not-empty{
+        	background:url('../img/search-icon.png') no-repeat 10px 10px;
+        }
+
 
 	}
 
